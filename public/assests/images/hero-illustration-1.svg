@@ -1,0 +1,230 @@
+<svg viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DFAF49"/>
+      <stop offset="100%" style="stop-color:#C89635"/>
+    </linearGradient>
+    
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299e1"/>
+      <stop offset="100%" style="stop-color:#3182ce"/>
+    </linearGradient>
+    
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#48bb78"/>
+      <stop offset="100%" style="stop-color:#38a169"/>
+    </linearGradient>
+    
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9f7aea"/>
+      <stop offset="100%" style="stop-color:#805ad5"/>
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="800" fill="transparent"/>
+  
+  <!-- Ambient glow circles -->
+  <circle cx="300" cy="200" r="200" fill="url(#gold)" opacity="0.08"/>
+  <circle cx="1100" cy="600" r="250" fill="url(#blue)" opacity="0.06"/>
+  
+  <!-- ILLUSTRATION 2: Team Collaboration Scene -->
+  <g transform="translate(200, 150)">
+    
+    <!-- Central Hexagon Hub (TaskNest logo style) -->
+    <g transform="translate(500, 300)" filter="url(#shadow)">
+      <!-- Large central hexagon -->
+      <path d="M 0 -120 L 103.92 -60 L 103.92 60 L 0 120 L -103.92 60 L -103.92 -60 Z" 
+            fill="url(#gold)" 
+            filter="url(#glow)"/>
+      
+      <!-- Inner rings -->
+      <path d="M 0 -90 L 77.94 -45 L 77.94 45 L 0 90 L -77.94 45 L -77.94 -45 Z" 
+            fill="none" 
+            stroke="white" 
+            stroke-width="3" 
+            opacity="0.4"/>
+      
+      <path d="M 0 -60 L 51.96 -30 L 51.96 30 L 0 60 L -51.96 30 L -51.96 -30 Z" 
+            fill="none" 
+            stroke="white" 
+            stroke-width="3" 
+            opacity="0.6"/>
+      
+      <!-- Center icon -->
+      <circle cx="0" cy="0" r="40" fill="white" opacity="0.95"/>
+      <text x="0" y="15" font-family="Arial" font-size="40" text-anchor="middle" fill="#DFAF49">⚡</text>
+      
+      <!-- Label -->
+      <text x="0" y="160" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="white">
+        TaskNest Hub
+      </text>
+    </g>
+    
+    <!-- Team Members (People around the hub) -->
+    
+    <!-- Person 1 - Top Left -->
+    <g transform="translate(200, 100)" filter="url(#shadow)">
+      <!-- Avatar background -->
+      <circle cx="0" cy="0" r="60" fill="url(#blue)"/>
+      <circle cx="0" cy="0" r="50" fill="white" opacity="0.2"/>
+      
+      <!-- Person icon -->
+      <circle cx="0" cy="-10" r="15" fill="white"/>
+      <path d="M -20 25 Q 0 15, 20 25" fill="white" stroke="white" stroke-width="8" stroke-linecap="round"/>
+      
+      <!-- Name badge -->
+      <rect x="-45" y="80" width="90" height="35" rx="8" fill="white" filter="url(#shadow)"/>
+      <text x="0" y="102" font-family="Arial" font-size="13" font-weight="600" text-anchor="middle" fill="#2d3748">
+        Admin
+      </text>
+      
+      <!-- Status indicator -->
+      <circle cx="45" cy="-45" r="12" fill="#48bb78"/>
+      <circle cx="45" cy="-45" r="8" fill="white"/>
+    </g>
+    
+    <!-- Person 2 - Top Right -->
+    <g transform="translate(800, 100)" filter="url(#shadow)">
+      <circle cx="0" cy="0" r="60" fill="url(#green)"/>
+      <circle cx="0" cy="0" r="50" fill="white" opacity="0.2"/>
+      
+      <circle cx="0" cy="-10" r="15" fill="white"/>
+      <path d="M -20 25 Q 0 15, 20 25" fill="white" stroke="white" stroke-width="8" stroke-linecap="round"/>
+      
+      <rect x="-45" y="80" width="90" height="35" rx="8" fill="white" filter="url(#shadow)"/>
+      <text x="0" y="102" font-family="Arial" font-size="13" font-weight="600" text-anchor="middle" fill="#2d3748">
+        Editor
+      </text>
+      
+      <circle cx="45" cy="-45" r="12" fill="#48bb78"/>
+      <circle cx="45" cy="-45" r="8" fill="white"/>
+    </g>
+    
+    <!-- Person 3 - Bottom Left -->
+    <g transform="translate(250, 500)" filter="url(#shadow)">
+      <circle cx="0" cy="0" r="60" fill="url(#purple)"/>
+      <circle cx="0" cy="0" r="50" fill="white" opacity="0.2"/>
+      
+      <circle cx="0" cy="-10" r="15" fill="white"/>
+      <path d="M -20 25 Q 0 15, 20 25" fill="white" stroke="white" stroke-width="8" stroke-linecap="round"/>
+      
+      <rect x="-45" y="80" width="90" height="35" rx="8" fill="white" filter="url(#shadow)"/>
+      <text x="0" y="102" font-family="Arial" font-size="13" font-weight="600" text-anchor="middle" fill="#2d3748">
+        Viewer
+      </text>
+      
+      <circle cx="45" cy="-45" r="12" fill="#718096"/>
+      <circle cx="45" cy="-45" r="8" fill="white"/>
+    </g>
+    
+    <!-- Person 4 - Bottom Right -->
+    <g transform="translate(750, 500)" filter="url(#shadow)">
+      <circle cx="0" cy="0" r="60" fill="url(#gold)"/>
+      <circle cx="0" cy="0" r="50" fill="white" opacity="0.2"/>
+      
+      <circle cx="0" cy="-10" r="15" fill="white"/>
+      <path d="M -20 25 Q 0 15, 20 25" fill="white" stroke="white" stroke-width="8" stroke-linecap="round"/>
+      
+      <rect x="-45" y="80" width="90" height="35" rx="8" fill="white" filter="url(#shadow)"/>
+      <text x="0" y="102" font-family="Arial" font-size="13" font-weight="600" text-anchor="middle" fill="#2d3748">
+        Editor
+      </text>
+      
+      <circle cx="45" cy="-45" r="12" fill="#48bb78"/>
+      <circle cx="45" cy="-45" r="8" fill="white"/>
+    </g>
+    
+    <!-- Connection Lines with animated flow -->
+    <g stroke="#DFAF49" stroke-width="3" fill="none" opacity="0.4" stroke-dasharray="10,10">
+      <line x1="240" y1="140" x2="440" y2="240"/>
+      <line x1="760" y1="140" x2="560" y2="240"/>
+      <line x1="290" y1="460" x2="450" y2="380"/>
+      <line x1="710" y1="460" x2="550" y2="380"/>
+    </g>
+    
+    <!-- Floating Task Cards -->
+    
+    <!-- Task Card 1 -->
+    <g transform="translate(50, 250)" filter="url(#shadow)">
+      <rect x="0" y="0" width="140" height="100" rx="12" fill="white"/>
+      <rect x="0" y="0" width="140" height="8" rx="2" fill="url(#blue)"/>
+      <text x="15" y="35" font-family="Arial" font-size="12" font-weight="600" fill="#2d3748">Design Review</text>
+      <rect x="15" y="45" width="110" height="6" rx="3" fill="#e2e8f0"/>
+      <rect x="15" y="45" width="75" height="6" rx="3" fill="url(#blue)"/>
+      <text x="15" y="68" font-family="Arial" font-size="9" fill="#718096">Due: Today</text>
+      <circle cx="125" cy="85" r="8" fill="url(#green)"/>
+      <text x="125" y="88" font-family="Arial" font-size="10" text-anchor="middle" fill="white">✓</text>
+    </g>
+    
+    <!-- Task Card 2 -->
+    <g transform="translate(810, 280)" filter="url(#shadow)">
+      <rect x="0" y="0" width="140" height="100" rx="12" fill="white"/>
+      <rect x="0" y="0" width="140" height="8" rx="2" fill="url(#gold)"/>
+      <text x="15" y="35" font-family="Arial" font-size="12" font-weight="600" fill="#2d3748">Sprint Planning</text>
+      <rect x="15" y="45" width="110" height="6" rx="3" fill="#e2e8f0"/>
+      <rect x="15" y="45" width="50" height="6" rx="3" fill="url(#gold)"/>
+      <text x="15" y="68" font-family="Arial" font-size="9" fill="#718096">In Progress</text>
+      <circle cx="20" cy="85" r="6" fill="url(#blue)"/>
+      <circle cx="35" cy="85" r="6" fill="url(#green)"/>
+      <circle cx="50" cy="85" r="6" fill="url(#purple)"/>
+    </g>
+    
+    <!-- Workflow Card -->
+    <g transform="translate(400, 80)" filter="url(#shadow)">
+      <rect x="0" y="0" width="200" height="80" rx="12" fill="white"/>
+      <circle cx="25" cy="25" r="15" fill="url(#gold)"/>
+      <text x="25" y="31" font-family="Arial" font-size="16" text-anchor="middle" fill="white">🎯</text>
+      <text x="50" y="25" font-family="Arial" font-size="13" font-weight="600" fill="#2d3748">Active Workflows</text>
+      <text x="50" y="48" font-family="Arial" font-size="24" font-weight="bold" fill="#DFAF49">12</text>
+      <text x="50" y="63" font-family="Arial" font-size="10" fill="#718096">Running smoothly</text>
+    </g>
+    
+    <!-- Notification Badge -->
+    <g transform="translate(420, 480)" filter="url(#shadow)">
+      <rect x="0" y="0" width="160" height="60" rx="10" fill="url(#green)"/>
+      <circle cx="25" cy="30" r="12" fill="white"/>
+      <text x="25" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#38a169">✓</text>
+      <text x="48" y="27" font-family="Arial" font-size="12" font-weight="600" fill="white">Task Completed!</text>
+      <text x="48" y="45" font-family="Arial" font-size="10" fill="white" opacity="0.9">Great work team</text>
+    </g>
+    
+    <!-- Decorative elements -->
+    <g fill="#DFAF49" opacity="0.3">
+      <circle cx="100" cy="150" r="5"/>
+      <circle cx="900" cy="200" r="5"/>
+      <circle cx="150" cy="550" r="5"/>
+      <circle cx="850" cy="520" r="5"/>
+      <circle cx="500" cy="50" r="4"/>
+    </g>
+    
+    <!-- Animated data flow particles -->
+    <g fill="#DFAF49" opacity="0.6">
+      <circle cx="320" cy="190" r="3">
+        <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="680" cy="190" r="3">
+        <animate attributeName="opacity" values="0;0.6;0" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="370" cy="420" r="3">
+        <animate attributeName="opacity" values="0.6;0;0.6" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="630" cy="420" r="3">
+        <animate attributeName="opacity" values="0;0.6;0" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+</svg>

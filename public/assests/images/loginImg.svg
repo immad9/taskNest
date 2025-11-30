@@ -1,0 +1,55 @@
+<svg viewBox="105 0 300 350" fill="url(#dark)" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DFAF49"/>
+      <stop offset="100%" style="stop-color:#C89635"/>
+    </linearGradient>
+    
+    <linearGradient id="dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748"/>
+      <stop offset="100%" style="stop-color:#1a202c"/>
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <!-- <rect width="1200" height="1400" fill="url(#dark)"/> -->
+  
+  <!-- ============================= -->
+  <!-- LOGIN ILLUSTRATION -->
+  <!-- ============================= -->
+  
+    <!-- Main hexagon logo -->
+    <g transform="translate(250, 120)" filter="url(#shadow)">
+      <circle cx="0" cy="0" r="100" fill="url(#gold)" opacity="0.2"/>
+      <path d="M 0 -80 L 69.3 -40 L 69.3 40 L 0 80 L -69.3 40 L -69.3 -40 Z" 
+            fill="url(#gold)"/>
+      <path d="M 0 -60 L 52 -30 L 52 30 L 0 60 L -52 30 L -52 -30 Z" 
+            fill="none" 
+            stroke="white" 
+            stroke-width="3" 
+            opacity="0.4"/>
+      <path d="M 0 -40 L 34.6 -20 L 34.6 20 L 0 40 L -34.6 20 L -34.6 -20 Z" 
+            fill="white" 
+            opacity="0.9"/>
+      
+      <!-- Lock icon -->
+      <g transform="translate(0, -5)">
+        <circle cx="0" cy="-12" r="10" fill="none" stroke="#DFAF49" stroke-width="3"/>
+        <rect x="-12" y="0" width="24" height="28" rx="4" fill="#DFAF49"/>
+        <circle cx="0" cy="14" r="5" fill="white"/>
+      </g>
+    </g>
+    
+    <!-- Welcome text -->
+    <text x="250" y="260" font-family="Inter" font-size="36" font-weight="bold" fill="#DFAF49" text-anchor="middle">
+      Welcome Back
+    </text>
+    <text x="250" y="290" font-family="Inter" font-size="16" fill="#718096" text-anchor="middle">
+      Log in to your workspace
+    </text>
+   
+</svg>

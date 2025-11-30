@@ -1,0 +1,67 @@
+<svg viewBox="78 0 350 390" fill="url(#dark)" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DFAF49"/>
+      <stop offset="100%" style="stop-color:#C89635"/>
+    </linearGradient>
+    
+    <linearGradient id="dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748"/>
+      <stop offset="100%" style="stop-color:#1a202c"/>
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <!-- <rect width="1200" height="1400" fill="url(#dark)"/> -->
+  
+
+
+  <!-- ============================= -->
+  <!-- SIGNUP ILLUSTRATION -->
+  <!-- ============================= -->
+  <!-- <g transform="translate(250, 120)"> -->
+    
+    <!-- Rocket -->
+    <g transform="translate(250, 140)" filter="url(#shadow)">
+      <!-- Rocket body -->
+      <ellipse cx="0" cy="0" rx="35" ry="70" fill="url(#gold)"/>
+      
+      <!-- Rocket top -->
+      <path d="M -35 -70 L 0 -105 L 35 -70 Z" fill="#C89635"/>
+      
+      <!-- Window -->
+      <circle cx="0" cy="-35" r="15" fill="white"/>
+      <circle cx="0" cy="-35" r="10" fill="#2d3748"/>
+      
+      <!-- Fins -->
+      <path d="M -35 35 L -60 70 L -35 70 Z" fill="#C89635"/>
+      <path d="M 35 35 L 60 70 L 35 70 Z" fill="#C89635"/>
+      
+      <!-- Fire -->
+      <ellipse cx="-12" cy="75" rx="10" ry="25" fill="#ff6b6b" opacity="0.7">
+        <animate attributeName="ry" values="25;30;25" dur="0.3s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="0" cy="80" rx="12" ry="30" fill="#feca57" opacity="0.7">
+        <animate attributeName="ry" values="30;35;30" dur="0.3s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="12" cy="75" rx="10" ry="25" fill="#ff6b6b" opacity="0.7">
+        <animate attributeName="ry" values="25;30;25" dur="0.3s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    
+    <!-- Text -->
+    <text x="250" y="295" font-family="Inter" font-size="36" font-weight="bold" fill="#DFAF49" text-anchor="middle">
+      Start Your Journey
+    </text>
+    <text x="250" y="320" font-family="Inter" font-size="16" fill="#718096" text-anchor="middle">
+      Create your workspace today
+    </text>
+   
+  <!-- </g> -->
+
+  
+</svg>
